@@ -1,3 +1,4 @@
+import Nav from '@components/Nav';
 import '@styles/globals.css';
 
 export const matadata = {
@@ -13,7 +14,10 @@ const RootLayout = ({ children }) => {
           <div className='gradient' />
         </div>
 
-        <main className='app'>{children}</main>
+        <main className='app'>
+          <Nav />
+          {children}
+        </main>
       </body>
     </html>
   );
